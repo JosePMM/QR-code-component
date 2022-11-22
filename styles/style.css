@@ -1,0 +1,94 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 700 */
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: #7b879d;
+    --Dark-blue: #1f3251;
+
+    --Font-size-p: 15px;
+    --outfit-font: 'Outfit', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Light-gray);
+    font-size: var(--Font-size-p);
+    font-family: var(--outfit-font);
+}
+
+.card {
+    background-color: var(--White);
+    width: 400px;
+    height: 600px;
+    margin: 68px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 5px 18px 0px rgba(123,135,157,1);
+    -moz-box-shadow: 0px 5px 18px 0px rgba(123,135,157,1);
+    box-shadow: 0px 5px 18px 0px rgba(123,135,157,1);
+}
+
+.card__imagen {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin: 0;
+}
+
+.card__imagen--qr {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card__descripcion {
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.card__descripcion--titulo {
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.card__descripcion--p {
+    padding: 0 2rem;
+    font-size: 1em;
+    color: var(--Grayish-blue);
+}
